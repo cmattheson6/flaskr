@@ -12,10 +12,10 @@ full_path = os.path.join(new_path, 'flaskr')
 
 
 try:
-    from flaskr import app
+    from flaskr.flaskr import app
 except ImportError:
     sys.path.append(full_path)
-    from flaskr import app
+    from flaskr.flaskr import app
 
 
 def before_feature(context, feature):
